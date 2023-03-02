@@ -1,2 +1,23 @@
 {% extends "tiktoks/layout.html" %} {% load static %} {% block title %}
-<title>Tiktoks</title>{% endblock %} {% block body %} {% endblock %}
+<title>Tiktoks</title>
+
+{% endblock %} {% block body %}
+<!-- <div class="tiktok-holder"></div> -->
+<div class="container">
+  <h1>Chats Tiktoks</h1>
+
+  <div class="quotes"></div>
+
+  <div class="loader">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+
+<script async src="https://www.tiktok.com/embed.js"></script>
+<script
+  type="module"
+  src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-tiktok@0.1.0/lite-tiktok.js"
+></script>
+{% endblock %}

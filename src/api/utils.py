@@ -53,7 +53,6 @@ def read_user_chatlogs(
     month = month or today.month
 
     filename = f"{FILE_LOG_DIR}/{channel}/{year}/{month}/{username}.txt"
-
     return reader(filename, UserLog)
 
 
@@ -106,7 +105,10 @@ def get_channel_tiktoks(channel: str):
     month = today.month
 
     dir_ = FILE_LOG_DIR + f"/_links/{channel}/{year}/{month}/{channel}.txt"
-    return reader(dir_, None)
+    data = reader(dir_, None)
+    data.reverse()
+
+    return data
 
 
 # @timer

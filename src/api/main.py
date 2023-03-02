@@ -1,5 +1,5 @@
 from fastapi import FastAPI, HTTPException
-from fastapi_pagination import Page, add_pagination, paginate
+from fastapi_pagination import Page, Params, add_pagination, paginate
 from models import *
 
 
