@@ -171,6 +171,6 @@ class Bot(commands.Bot):
         return
 
 
-bot = Bot()
-bot.run()
+# bot = Bot()
+# bot.run()
 # bot.run() is blocking and will stop execution of any below code here until stopped or closed.
